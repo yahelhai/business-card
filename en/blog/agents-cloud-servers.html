@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Are Agents Doing to Employees What the Cloud Did to Servers? — yahelh.ai</title>
+    <meta name="description" content="Speed, pay-per-use pricing, and the shift from CapEx to OpEx: what the cloud did to servers, agents are starting to do to R&amp;D headcount. And what that means for incumbents.">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <input type="checkbox" id="theme-switch" class="sr-only">
+
+    <div class="page page-calm">
+      <div class="backdrop" aria-hidden="true">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="dot-field"></div>
+      </div>
+
+      <header class="site-header">
+        <div class="wrap">
+          <div class="bar" dir="ltr">
+            <a class="wordmark" href="../../index.html">
+              <span class="prompt">~/</span>yahelh<span class="tld">.ai</span>
+            </a>
+
+            <div class="bar-actions">
+              <a class="nav-link" href="../../about.html">About</a>
+              <span class="info">
+                <span class="info-trigger" tabindex="0" role="note" aria-label="About the other language version" aria-describedby="translation-note">i</span>
+                <span class="info-text" id="translation-note" role="tooltip" dir="ltr">This article was written natively in both languages.</span>
+              </span>
+              <a class="lang-switch" href="../../blog/agents-cloud-servers.html" hreflang="he" lang="he">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" />
+                  <path d="m22 22-5-10-5 10" /><path d="M14 18h6" />
+                </svg>
+                <span>עב</span>
+              </a>
+              <label class="theme-toggle" for="theme-switch">
+                <span class="sr-only">Toggle color theme — dark or light</span>
+                <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4" />
+                </svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <div class="wrap">
+          <article class="reading-panel">
+            <header class="post-header">
+              <h1 class="post-title">Are Agents Doing to Employees What the Cloud Did to Servers?</h1>
+              <p class="post-desc">Speed, pay-per-use pricing, and the shift from CapEx to OpEx: what the cloud did to servers, agents are starting to do to R&amp;D headcount. And what that means for incumbents.</p>
+              <p class="post-date"><span dir="ltr"><time datetime="2026-09-05">2026-09-05</time></span></p>
+            </header>
+
+            <div class="prose post-body">
+<p>Let’s start with a guided visualization:<br>
+The year is 2008. You’re the founder of an early-stage B2B2C startup. You’ve raised capital (a $1M seed, following your family &amp; friends round), and there are two major blocks you need to spend money on and take care of:</p>
+<ul>
+<li>Hiring employees.</li>
+<li>Buying servers.</li>
+</ul>
+<p>Let’s start with the servers.</p>
+<p>First of all, you had to plan. A lot.</p>
+<p>Understand the architecture, figure out which hardware fits your needs and your code, figure out how to handle scale. What happens if the app blows up to thousands of users next week? What happens if your app doesn’t blow up at all, and you might need to pivot to something else entirely? What happens if a huge customer onboards?</p>
+<p>Scale, for example, is not a problem you can solve easily.</p>
+<p>Demand for the app explodes -&gt; you need more compute -&gt; you need to order more servers -&gt; you need to wait for them to arrive -&gt; you need to hook them up to power and network and deploy your software on them - all of that just to meet existing demand, which may well have shifted by the time those servers arrive.</p>
+<p>When you want to expand to another region and keep latency low, you need to find and buy/lease new real estate, order new servers for it, and so on.</p>
+<p>From an accounting standpoint - a startup has to pay for the servers upfront. According to a 2011 Forbes article<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup>, we’re talking about tens to hundreds of thousands of dollars, depending on size.</p>
+<p>That purchase is CapEx - a capital expenditure. The cash goes out upfront, but on the books the servers aren’t recorded as an expense; they’re recorded as an asset on the balance sheet, depreciated over the years as it loses value. That’s the defining trait of CapEx: a large payment before a single dollar of revenue comes in, an asset sitting on the company’s books, and gradual recognition of the cost over its life.</p>
+<p>This can be a real disadvantage for small startups that want to move fast, change direction, or whose app might blow up beyond expectations. Server costs can be a large chunk of the runway, spent upfront - especially in an era when a seed is $1M and an A is ~$4M.<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label">2</a></sup> You need to operate the servers, house them, and eventually sell them when they’re no longer needed (which makes this expense significantly less flexible).</p>
+<p>You can also look at this model as a serious technological moat for the big companies. Large companies have higher server redundancy. For a given initiative, the right server might already exist inside the company. And if the initiative fails, they can use those servers for another project (instead of selling them), avoiding that expense the next time around.</p>
+<h2 id="and-then-came-the-cloud">And then came the cloud</h2>
+<p>You’re a founder in 2015. The server problem is already solved.<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref aria-describedby="footnote-label">3</a></sup> Scale is now a matter of a few button clicks (and even that got automated). You don’t need to wait, to order in advance, to plan in advance; you don’t need to buy real estate in another region to place servers in. And if you need to pivot - you simply throw the servers in the trash and buy different services.</p>
+<p>There’s no big upfront expense burning your runway. No need to buy excess servers for scale that may never come. And the reverse is true too - you can scale up to almost any level instantly, without waiting weeks for servers to be ordered and installed.</p>
+<p>Important note: solving the server problem ≠ free servers. In the long run, cloud is not cheaper than buying servers.<sup><a href="#user-content-fn-4" id="user-content-fnref-4" data-footnote-ref aria-describedby="footnote-label">4</a></sup> It’s just that the money is no longer an upfront problem.</p>
+<p>Not by coincidence, since the revolution began we’ve seen a surge in the number of startups positioned to enjoy these advantages of the cloud, both technical and accounting-related. About 73% of all SaaS companies were founded after 2010<sup><a href="#user-content-fn-5" id="user-content-fnref-5" data-footnote-ref aria-describedby="footnote-label">5</a></sup> - right after the cloud established itself - and today it’s rare to find a startup that isn’t cloud-native.<sup><a href="#user-content-fn-6" id="user-content-fnref-6" data-footnote-ref aria-describedby="footnote-label">6</a></sup></p>
+<p>For the incumbents - that’s one moat fewer.</p>
+<p>One model that broke out in a major way after this revolution is SaaS. The server problem was solved so thoroughly that global scale became possible especially for relatively young startups (such as Shopify, Slack). Before that, it was significantly harder for a new player to break through from below, so this was mostly the domain of incumbents, who could sustain a large, sprawling, international operation.</p>
+<p>In short: bring an idea, bring <strong>developers</strong> - and the scale you can reach is infinite and flexible.</p>
+<p>Accounting-wise:<br>
+Cloud costs are current expenses, not capital ones: no asset on the balance sheet, no depreciation, and you pay per use.</p>
+<p>One thing that characterizes software companies in particular, and companies whose business model is built on near-zero marginal cost in general, is high OpEx - much higher than revenue at first, on the expectation that a point will come when revenue far outruns OpEx. In addition, their marginal cost is close to zero, so COGS is low relative to revenue - a gross margin of 70-80% for a typical SaaS company.</p>
+<p>This move wasn’t born in software. It started in the chip industry - the one that gave Silicon Valley its name. The software industry then perfected the business model; take early Microsoft, for example - selling the millionth-and-one copy of Windows cost the company little more than the price of the disk it was burned onto (and even that disappeared in the OEM world). In the SaaS world, marginal cost is nearly zero: for Facebook, for example, an additional user joining costs the company almost nothing. They don’t need to buy dedicated hardware for them, and the compute required for everything that user does is negligible.</p>
+<p>For most B2B software companies today, what falls under COGS might be a proportional share of the infrastructure allocated to a given customer, and a proportional share of the support and customer success staff serving them - and that still preserves a cost structure of low COGS relative to exceptionally high margins.</p>
+<p>Now let’s turn to another large piece a startup has to maintain in order to exist: employees. We’ll talk about R&amp;D employees.<br>
+The reason this article focuses mainly on the R&amp;D department is that at most startups, up to around the Series B stage, R&amp;D spend makes up the lion’s share of OpEx.<sup><a href="#user-content-fn-7" id="user-content-fnref-7" data-footnote-ref aria-describedby="footnote-label">7</a></sup></p>
+<p>After the cloud broke into the mainstream, startups would raise a seed to get to an MVP, and once there was strong validation there, plus a forecast of massive customer growth, a relatively large Series A or B would usually follow, meant to bring in a lot of R&amp;D - from the sharpest talents and architects on the market down to mid-level developers, juniors, and QA.</p>
+<p>Essentially, more customers means more demands: demands for complex features as well as simple ones, for scale, for different languages, for bug fixes, maybe even for complementary products. And to meet those demands as fast as possible, you need to hire a lot of people - and quickly.<br>
+Development capacity is linearly bounded by headcount. R&amp;D employees take development tasks and execute them.</p>
+<p>Headcount is not a particularly flexible business:</p>
+<ul>
+<li>Filling a position takes time and attention.<sup><a href="#user-content-fn-8" id="user-content-fnref-8" data-footnote-ref aria-describedby="footnote-label">8</a></sup></li>
+<li>Onboarding a new employee takes time. That is - until an employee becomes effective, they need a ramp-up period, and they usually eat into their colleagues’ effectiveness along the way.</li>
+<li>Backfilling for people who decided to leave takes time (unlike servers, human beings have free will).</li>
+<li>If a project shuts down - the people who worked on it may be laid off or moved to other departments and products. If they’re moved, it isn’t always the best fit. If they’re laid off - that’s a non-negligible cost for the company: in money, in reputation, and in workforce morale.</li>
+</ul>
+<p>By the way, this list is not a new insight. Labor economists have known it since 1962, when Walter Oi coined the concept of labor as a quasi-fixed factor of production: an employee is not a purely current expense, but an investment with an entry cost (recruiting, onboarding) and an exit cost (severance, morale, knowledge walking out the door). These costs are exactly what makes headcount inflexible.<sup><a href="#user-content-fn-9" id="user-content-fnref-9" data-footnote-ref aria-describedby="footnote-label">9</a></sup></p>
+<p>The similarity in inflexibility is easy to see from the previous paragraph alone. Even if, in the end, the function a software architect needs to fulfill inside the company is well defined for the product they’re assigned to work on - that person has their own professional aspirations, their own personal interest in the work, and their own desire to grow their career.</p>
+<p>Finding the right employee, especially for complex roles, takes enormous time, effort, and money. Their salary is usually higher (which takes a chunk of the runway), the effort to land them is higher, and it can take weeks and months until the role is filled.</p>
+<p>If some of the features required at a later stage of the company are easy to implement, that architect won’t want to work on them, and for that the company has to employ mid-level and junior developers to build those features.</p>
+<p>If an initiative fails, the company has to let the employee go. The recruiting and onboarding costs for that employee are already sunk and unrecoverable (and unlike a server, which is an asset that can be sold or repurposed - an employee is not). What decides the matter is the costs going forward: layoffs cost money in severance, morale, and reputation, and hiring a replacement costs even more - according to Gallup, replacing an employee costs between half a year’s and two years’ salary.<sup><a href="#user-content-fn-10" id="user-content-fnref-10" data-footnote-ref aria-describedby="footnote-label">10</a></sup> So companies prefer to move that employee to a different role (not necessarily one they’re better suited for) and accept that this role, too, will require onboarding (meaning that in the short term, their output takes a hit).</p>
+<p>Here too, it’s easy to see that large companies have a certain advantage. Incumbents can span multiple products, they can offer a broader growth horizon with more disciplines, and internal mobility can be more efficient than at a small, single-product startup trying to break into the market.</p>
+<p>The function servers fulfill is processing capacity, and the cloud makes companies’ ability to consume that function as flexible as it can possibly be.<br>
+R&amp;D is a function of development capacity. The way companies acquire that capacity has been, as described, hiring more and more employees. Until now.</p>
+<h2 id="agents-break-into-the-mainstream">Agents break into the mainstream</h2>
+<p>In a gradual process starting in 2023, which picked up real speed in late 2025, LLM-based agents came into being. Today, agents can write code, write specs, run tests, handle CI/CD pipelines, and help with decision-making in almost every area.</p>
+<p>It seems, to a degree, that the second (and last) big block left standing for small startups is being breached by those agents. We can see similarities between what agents are doing to R&amp;D organizations and what the cloud did to servers.</p>
+<p>For example: agents, much like the cloud, are not necessarily cheaper than employees in the long run. The working models aren’t fully settled yet, token costs can reach thousands of dollars per employee per month, and given that this is a new technology - the work isn’t necessarily done in the most efficient way, the way the market will translate it a few years from now, once the process is fully adopted.</p>
+<p>The more substantive similarities:</p>
+<p><strong>Speed.</strong> Agents don’t need recruiters, don’t need weeks of interviews, and when they’re no longer needed - there’s no need to lay them off or move them to another role. You can simply delete them. Much like the speed advantage of cloud over servers.</p>
+<p><strong>Pricing.</strong> While an employee’s cost is fixed across the months they work at the company, an agent’s cost varies with the operations it runs. An agent can work 24/7, and when it’s not needed - even temporarily - it costs nothing at all. Exactly like the cloud model. Or, to put it in the economists’ terms: if an employee is a quasi-fixed factor of production, the agent is the first factor of development-work production with near-zero entry and exit costs. The first that truly behaves like variable OpEx.</p>
+<p>Today, a hand-picked team of product and engineering experts, possibly tiny - say 5-15 people (a size typical of a company’s very early days, usually after the pre-seed or seed stage) - plus an army of agents, can wield firepower and delivery capabilities resembling those of a company several times its headcount (which usually reflects a larger raise, an A or a B). Especially given the lean codebase, the team’s expertise, and the precise fit of each person to the role they perform.<sup><a href="#user-content-fn-11" id="user-content-fnref-11" data-footnote-ref aria-describedby="footnote-label">11</a></sup></p>
+<p>Just like the cloud: you can stand up a lean cloud footprint at a tiny cost relative to buying the servers upfront, housing them, and maintaining them.</p>
+<p>It will be interesting to watch, over the next few years, how this affects the OpEx line. Will the graph of feature production and bug fixing as a function of headcount remain linearly bounded, or break through it?<br>
+That is, can the right team mix - few employees, many agents - produce output equal to a development team an order of magnitude larger?<br>
+And will it be possible to harness this scalable, pay-per-use workforce at high speeds - much like the gap between consuming cloud as a service versus buying it as a server?</p>
+<h2 id="here-too-lets-look-at-the-incumbent">Here, too, let’s look at the incumbent</h2>
+<p>Today’s incumbents were built before the agent era. Over the past year we’ve been witnessing a wave of layoffs across many of the big tech companies. AI appears to be cited as one of the main reasons.<sup><a href="#user-content-fn-12" id="user-content-fnref-12" data-footnote-ref aria-describedby="footnote-label">12</a></sup></p>
+<p>Even if on paper the cuts are meant to support integrating agentic technologies into development and build processes, their implementation doesn’t necessarily serve that goal. Most likely, the layers being laid off belong to less economical projects, and resources are being shifted to features better suited to the current era. Some cuts may be performance-based - but performance that reflects pre-AI-era work.</p>
+<p>At the incumbents, once the excess weight is shed, there’s no guarantee the remaining team can actually integrate an agentic environment as efficiently as a small startup raised on AI. The remaining workforce doesn’t necessarily know how to operate these tools optimally, and the infrastructure and codebase won’t necessarily support the use of AI tools optimally either.<sup><a href="#user-content-fn-13" id="user-content-fnref-13" data-footnote-ref aria-describedby="footnote-label">13</a></sup></p>
+<p>In the past we’ve seen plenty of incumbents lose their greatness to efficient disruptors rising from the bottom of the market (a phenomenon covered extensively in Clayton Christensen’s Innovator’s Dilemma). One of the incumbents’ effective ways of overcoming it is simply to buy those companies - before they get big and threaten their position - and bring their technology and products in-house.</p>
+<p>A good example is happening in security - the field I’ve worked in for the past decade. In recent years we’ve been seeing major consolidation in the space. There are a handful of platform companies bundling security solutions for nearly every product on the market. When a need arises for a new security product, those incumbents can build a solution themselves, or wait for the market to run its course until there are a few established players in the space. They can even choose to invest in startups early on. Once a few startups succeed (stable PMF is found for them, sometimes even paying customers) and their solution proves genuinely effective - the incumbents buy the products and add them to their suite. That’s how they preserve their market dominance.<sup><a href="#user-content-fn-14" id="user-content-fnref-14" data-footnote-ref aria-describedby="footnote-label">14</a></sup></p>
+<p>It may be that an effective way for incumbents to adopt the paradigm is this: given a meaningful market signal toward a particular technology - they’ll start building the solutions themselves, in lean, fast internal incubators. That could significantly raise the odds that the re-org done as part of AI-driven cuts is actually effective, rather than just a trim of the expense line.<br>
+It’s not that incubators of this kind didn’t exist at large companies before, but with the flywheel described above it becomes more and more scalable - and it may affect startups’ ability to get acquired by those companies.<br>
+A paradigm shift like that could affect the exit strategies of startups being founded today.</p>
+<p>To sum up, there appear to be strong similarities between the cloud-servers relationship and the relationship between AI-based agents and employees in organizations:</p>
+<ul>
+<li>The function one replaces in the other</li>
+<li>Characteristics: the ability to scale up &amp; down, the speed, the price</li>
+<li>Accounting line items and how they’re treated</li>
+<li>Companies’ ability to make their consumption of capacity (processing/development) flexible</li>
+</ul>
+<p>Of course, at the end of the day these are entirely different revolutions - development agents are just one utilization of AI, replacing a person with an agent is not one-to-one (the way a server can be swapped for EC2), and so on.</p>
+<p>In the cloud, these characteristics enabled several revolutions, SaaS first among them. It’s still too early to say what the equivalent(s) for agentic AI will be - or whether there will be one. Only in hindsight will we know which of today’s early sprouts fueled those revolutions, if and when they happen.</p>
+<p>In the next post I’ll dive deeper into how agentic AI is already affecting product development today, into more accounting matters, and into whether it’s exposing the first cracks through which disruptors could bring incumbents down.</p>
+<p>Feel free to reach out and discuss on any platform you find here. Predicting the future is hard, so I’d love to hear more opinions, feedback, and good food recommendations.</p>
+<hr>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>Joe McKendrick, <a href="https://www.forbes.com/sites/joemckendrick/2011/11/01/cloud-computing-is-fuel-for-the-next-entrepreneurial-boom/">“Cloud Computing Is Fuel For The Next Entrepreneurial Boom”</a>, Forbes, November 2011. <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>The typical seed round in the era before round inflation was $500-900K (<a href="https://pitchbook.com/news/articles/fewer-fatter-seed-series-a-deal-sizes-skyrocket-in-2017">PitchBook</a>); at Series A, mid-2000s funds typically invested $3-5M (<a href="https://news.crunchbase.com/venture/seed-funding-startups-top-vc-firms-a16z-nea-khosla/">Crunchbase News</a>), and the median A still stood at $2.8M in 2012 (PitchBook). <a href="#user-content-fnref-2" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-3">
+<p>Although AWS launched EC2 back in 2006, adoption was gradual: in a <a href="https://www.forrester.com/press-newsroom/forrester-security-concerns-hinder-cloud-computing-adoption">2009 Forrester survey</a>, only 3% of enterprises were using pay-per-use virtual server hosting, and about half cited security and privacy concerns as the main reason for avoiding the cloud. Only toward the middle of the following decade did the cloud become the default. <a href="#user-content-fnref-3" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-4">
+<p><a href="https://www.forbes.com/sites/joemckendrick/2011/11/01/cloud-computing-is-fuel-for-the-next-entrepreneurial-boom/">Forbes noted as early as 2011</a> that the economic advantage converges after two to three years; <a href="https://a16z.com/the-cost-of-cloud-a-trillion-dollar-paradox/">a16z showed</a> that at scale it’s even more expensive. <a href="#user-content-fnref-4" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-5">
+<p><a href="https://www.cloudwards.net/saas-statistics/">Cloudwards, SaaS Statistics</a>. <a href="#user-content-fnref-5" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-6">
+<p>Gartner, November 2021: by 2025, ~95% of new digital workloads will be deployed on cloud-native platforms (up from 30% in 2021), and 85% of organizations will embrace a cloud-first principle. <a href="https://www.techrepublic.com/article/85-of-organizations-will-be-cloud-first-by-2025-says-gartner/">Coverage in TechRepublic</a>. <a href="#user-content-fnref-6" data-footnote-backref="" aria-label="Back to reference 6" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-7">
+<p>According to <a href="https://www.scalevp.com/blog/splitting-spend-how-to-allocate-your-2025-budget-across-opex-categories">Scale Venture Partners</a> (Scale Studio, 1,000+ private companies), in the $0-1M ARR range S&amp;M makes up only ~25% of OpEx - meaning R&amp;D is the majority - and only above $25M ARR does it become the largest line item. According to the <a href="https://www.saas-capital.com/blog-posts/spending-benchmarks-for-private-b2b-saas-companies/">2026 SaaS Capital survey</a> (1,000+ private B2B SaaS companies), the medians at mature companies are: R&amp;D 22% of ARR, Sales+Marketing 23%, G&amp;A 15%. <a href="#user-content-fnref-7" data-footnote-backref="" aria-label="Back to reference 7" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-8">
+<p>The average time to hire a software engineer stands at <a href="https://www.paraform.com/blog/average-time-to-hire-software-engineer">about 35 days</a>, the median in engineering is 41 days, and according to <a href="https://rockstardeveloperuniversity.com/software-developer-hiring-statistics/">Workable, the global average for engineering roles reaches 62 days</a>. For senior roles, <a href="https://www.bridgeviewit.com/blog/how-long-to-fill-a-technical-role/">about 40% of positions take 90+ days to fill</a> (SHRM 2025). <a href="#user-content-fnref-8" data-footnote-backref="" aria-label="Back to reference 8" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-9">
+<p>Walter Y. Oi, “Labor as a Quasi-Fixed Factor”, The Journal of Political Economy, Vol. 70, No. 6 (1962). <a href="#user-content-fnref-9" data-footnote-backref="" aria-label="Back to reference 9" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-10">
+<p>Shane McFeely &amp; Ben Wigert, <a href="https://www.gallup.com/workplace/247391/fixable-problem-costs-businesses-trillion.aspx">“This Fixable Problem Costs U.S. Businesses $1 Trillion”</a>, Gallup, 2019 - the cost of replacing an employee ranges from one-half to two times their annual salary. <a href="#user-content-fnref-10" data-footnote-backref="" aria-label="Back to reference 10" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-11">
+<p>According to <a href="https://www.bvp.com/atlas/the-state-of-ai-2025">Bessemer</a>, the fastest-growing AI companies generate about $1.13M ARR per employee - 4-5x a typical SaaS company - and Lovable reached $200M ARR with only about 45 employees. <a href="#user-content-fnref-11" data-footnote-backref="" aria-label="Back to reference 11" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-12">
+<p>According to <a href="https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html">Challenger, Gray &amp; Christmas</a>, nearly 55,000 US layoffs in 2025 were explicitly attributed to AI, and according to a <a href="https://skillsyncer.com/layoffs-tracker">2026 tracker</a>, about 54% of tech layoff events explicitly cite AI or automation as a factor. Notable examples: <a href="https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/">Amazon cut ~30,000 corporate roles within three months (~9%)</a>, Meta 10%, Atlassian 10%, Snap 16%, Oracle ~13%, and Salesforce cut ~4,000 support staff, with Benioff’s famous line: “I need less heads”. <a href="#user-content-fnref-12" data-footnote-backref="" aria-label="Back to reference 12" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-13">
+<p>A <a href="https://www.classcentral.com/course/youtube-does-ai-actually-boost-developer-productivity-100k-devs-study-yegor-denisov-blanch-stanford-469765">Stanford study of 100,000+ developers</a> found that AI delivers a 30-40% improvement on simple greenfield tasks, but only 5-10% (and sometimes even negative) on complex legacy code. An AI-native startup lives at the high end; an incumbent with a twenty-year-old codebase - at the low one. <a href="#user-content-fnref-13" data-footnote-backref="" aria-label="Back to reference 13" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-14">
+<p>This is how Palo Alto Networks built its platform over a decade - acquisitions like Demisto (SOAR), Twistlock (container security), Expanse (ASM), Cider (AppSec), Dig and Talon - and at the peak, the ~$25 billion acquisition of CyberArk, the largest in its history, which added an entire Identity Security pillar. A notable competitor - CrowdStrike followed a similar path (Humio for logging, Preempt for Identity, Bionic for ASPM, Flow Security and Adaptive Shield). <a href="#user-content-fnref-14" data-footnote-backref="" aria-label="Back to reference 14" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap">
+          <div class="footer-inner" dir="ltr">
+            <span>&copy; 2026 Yahel Hai.</span>
+            <span class="social">
+              <a href="https://github.com/yahelhai" aria-label="GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/yahel-hai/" aria-label="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z" />
+                </svg>
+              </a>
+              <a href="mailto:me@yahelh.ai" aria-label="Send email">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 5L2 7" />
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>האם אייג׳נטים עושים לעובדים מה שקלאוד עשה לשרתים? — yahelh.ai</title>
+    <meta name="description" content="מהירות, תמחור לפי שימוש ומעבר מ-CapEx ל-OpEx: מה שהקלאוד עשה לשרתים, אייג׳נטים מתחילים לעשות לכוח האדם של ה-R&amp;D. ומה זה אומר על ה-incumbents.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <input type="checkbox" id="theme-switch" class="sr-only">
+
+    <div class="page page-calm">
+      <div class="backdrop" aria-hidden="true">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="dot-field"></div>
+      </div>
+
+      <header class="site-header">
+        <div class="wrap">
+          <div class="bar" dir="ltr">
+            <a class="wordmark" href="../index.html">
+              <span class="prompt">~/</span>yahelh<span class="tld">.ai</span>
+            </a>
+
+            <div class="bar-actions">
+              <a class="nav-link" href="../about.html">אודות</a>
+              <span class="info">
+                <span class="info-trigger" tabindex="0" role="note" aria-label="מידע על הגרסה המתורגמת" aria-describedby="translation-note">i</span>
+                <span class="info-text" id="translation-note" role="tooltip" dir="rtl">מאמר זה נכתב במקור בשתי השפות.</span>
+              </span>
+              <a class="lang-switch" href="../en/blog/agents-cloud-servers.html" hreflang="en" lang="en">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" />
+                  <path d="m22 22-5-10-5 10" /><path d="M14 18h6" />
+                </svg>
+                <span>En</span>
+              </a>
+              <label class="theme-toggle" for="theme-switch">
+                <span class="sr-only">החלפת ערכת צבעים — כהה או בהיר</span>
+                <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4" />
+                </svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <div class="wrap">
+          <article class="reading-panel">
+            <header class="post-header">
+              <h1 class="post-title">האם אייג׳נטים עושים לעובדים מה שקלאוד עשה לשרתים?</h1>
+              <p class="post-desc">מהירות, תמחור לפי שימוש ומעבר מ-CapEx ל-OpEx: מה שהקלאוד עשה לשרתים, אייג׳נטים מתחילים לעשות לכוח האדם של ה-R&amp;D. ומה זה אומר על ה-incumbents.</p>
+              <p class="post-date"><span dir="ltr"><time datetime="2026-09-05">2026-09-05</time></span></p>
+            </header>
+
+            <div class="prose post-body">
+<p>נתחיל בדמיון מודרך:<br>
+השנה היא 2008, אתה יזם של סטרטאפ B2B2C בתחילת דרכו. גייסת הון (סיד של 1m$, אחרי ראונד ה-family &amp; friends), ויש לך 2 בלוקים מרכזיים שאתה צריך להוציא עליהם כסף ולדאוג להם:</p>
+<ul>
+<li>גיוס עובדים.</li>
+<li>קניית שרתים.</li>
+</ul>
+<p>נתחיל בשרתים.</p>
+<p>דבר ראשון, היה צריך לתכנן - והרבה.</p>
+<p>להבין את הארכיטקטורה, להבין איזו חומרה תתאים לצרכים ולקוד, להבין איך להתמודד עם הסקייל. מה קורה אם האפליקציה מתפוצצת לאלפי יוזרים בשבוע הבא? מה קורה אם האפליקציה שלך לא מתפוצצת בכלל ואולי תצטרך לעשות pivot למשהו אחר לגמרי? מה קורה אם לקוח ענק עושה אונבורד?</p>
+<p>סקייל, לדוגמה, הוא לא בעיה שאפשר לפתור בקלות.</p>
+<p>ביקוש לאפליקציה מתפוצץ -&gt; צריך עוד כוח מחשוב -&gt; צריך להזמין עוד שרתים -&gt; צריך לחכות שהם יגיעו -&gt; צריך לחבר אותם לחשמל ולרשת, לעשות deploy של התוכנה עליהם - והכל רק כדי לעמוד בביקוש הקיים, שיכול להשתנות עד שהשרתים האלה יגיעו.</p>
+<p>כשרוצים להתרחב ל-region אחר ולדאוג ל-latency נמוך, צריך למצוא ולרכוש/להשכיר נדל״ן חדש, להזמין אליו שרתים חדשים וכן הלאה.</p>
+<p>מבחינה חשבונאית - סטרטאפ צריך לשלם את הסכום על השרתים מראש. לפי מאמר של Forbes מ-2011<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup>, מדובר על הוצאה של עשרות עד מאות אלפי דולרים כתלות בגודל.</p>
+<p>הרכישה הזאת היא CapEx - הוצאה הונית. המזומן יוצא מראש, אבל בספרים השרתים לא נרשמים כהוצאה אלא כנכס במאזן, שמופחת לאורך שנים ככל שהוא מאבד ערך. זה המאפיין של CapEx: תשלום גדול לפני שנכנס שקל הכנסה, נכס שיושב בספרי החברה, והכרה הדרגתית בעלות לאורך חייו.</p>
+<p>זה עשוי להיות חיסרון לסטרטאפים קטנים שרוצים לזוז מהר, לשנות, או שהאפליקציה שלהם תתפוצץ מעבר למצופה. עלות השרתים יכולה להיות נתח גדול מה-runway שצריך להוציא מראש - בטח בתקופה שסיד הוא 1m$ ו-A הוא 4m$~.<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label">2</a></sup> צריך לתפעל את השרתים, צריך לאחסן אותם, וצריך גם למכור אותם במידה ואין בהם שימוש יותר (מה שהופך את ההוצאה הזאת לגמישה משמעותית פחות).</p>
+<p>אפשר להסתכל על המודל הזה גם כחפיר טכנולוגי רציני עבור החברות הגדולות. בחברות גדולות יש redundancy גבוה יותר לשרתים. יכול להיות שעבור יוזמה מסוימת, השרת המתאים כבר קיים בחברה. יכול להיות שאם היוזמה תיכשל, יוכלו להשתמש בשרתים האלה לפרויקט אחר (במקום למכור אותם), וככה להימנע מההוצאה הזו שוב.</p>
+<h2 id="ואז-הגיע-ה-cloud">ואז הגיע ה-cloud</h2>
+<p>אתה יזם בשנת 2015. בעיית השרתים כבר פתורה.<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref aria-describedby="footnote-label">3</a></sup> סקייל נהיה עניין של כמה לחיצות כפתור (וגם לזה נוספו אוטומציות). אתה לא צריך לחכות, להזמין מראש, לתכנן מראש, אתה לא צריך לקנות נדל“ן ב-region אחר כדי להציב בו שרתים. במידה וצריך לעשות pivot - פשוט זורקים את השרתים לפח וקונים שירותים אחרים.</p>
+<p>אין הוצאה גדולה מראש ששורפת את ה-runway. אין צורך לקנות שרתים עודפים כדי להתמודד עם סקייל שאולי לא יקרה. ולהפך - אפשר להגדיל כמעט לכל סקייל במיידית, בלי לחכות שבועות להזמנה והתקנה של שרתים.</p>
+<p>חשוב לציין: פתרון בעיית השרתים ≠ שרתים בחינם. בטווח הארוך cloud לא זול יותר מקניית שרתים.<sup><a href="#user-content-fn-4" id="user-content-fnref-4" data-footnote-ref aria-describedby="footnote-label">4</a></sup> פשוט כסף הוא לא הבעיה מראש.</p>
+<p>לא בכדי, מאז שהתחילה המהפכה ראינו זינוק במספר ה-startups שיכלו ליהנות מהיתרונות האלה של ה-cloud, הטכניים והחשבונאיים. כ-73% מכלל חברות ה-SaaS נוסדו אחרי 2010<sup><a href="#user-content-fn-5" id="user-content-fnref-5" data-footnote-ref aria-describedby="footnote-label">5</a></sup> - בדיוק אחרי שה-cloud ביסס את עצמו - וכיום נדיר למצוא startup שאינו cloud-native.<sup><a href="#user-content-fn-6" id="user-content-fnref-6" data-footnote-ref aria-describedby="footnote-label">6</a></sup></p>
+<p>עבור ה-incumbents - מדובר בחפיר אחד פחות.</p>
+<p>מודל שפרץ משמעותית אחרי המהפכה הזאת הוא מודל ה-SaaS. בעיית השרתים נפתרה עד כדי כך ש-scale גלובלי נהיה אפשרי במיוחד עבור סטרטאפים חדשים יחסית (כגון Shopify, Slack). לפני כן היה משמעותית קשה יותר לשחקן חדש לפרוץ מלמטה, ועל כן זו הייתה בעיקר נחלתם של incumbents, שיכלו להחזיק אופרציה גדולה, מסועפת ובינלאומית.</p>
+<p>בגדול: תבוא עם רעיון, תבוא עם <strong>מתכנתים</strong> - והסקייל שתוכל להגיע אליו הוא אינסופי וגמיש.</p>
+<p>חשבונאית:<br>
+הוצאות cloud הן הוצאות שוטפות, לא הוניות: אין נכס במאזן, אין פחת, ומשלמים לפי שימוש.</p>
+<p>אחד הדברים שמאפיינים חברות תוכנה בפרט, וחברות שהמודל העסקי שלהן מבוסס על עלות שולית אפסית בכלל, הוא OpEx גבוה - בהתחלה גבוה בהרבה מההכנסות, שכן תגיע נקודה בזמן שההכנסות יעברו בהרבה את ה-OpEx. כמו כן, העלות השולית שלהן קרובה לאפס, ולכן ה-COGS נמוך ביחס להכנסות - gross margin של 70-80% בחברת SaaS טיפוסית.</p>
+<p>המהלך הזה לא נולד בתוכנה. הוא התחיל בתעשיית הצ’יפים - זו שנתנה לסיליקון ואלי את שמה. תעשיית התוכנה אף שכללה את המודל העסקי הזה; לדוגמה עבור מיקרוסופט בתחילת דרכה - למכור את העותק המיליון ואחד של Windows עלה לחברה קצת יותר ממחיר הדיסק שעליו הוא צרוב (וגם זה נעלם בעולם ה-OEM). בעולם של SaaS העלות השולית כמעט אפסית: עבור פייסבוק, לדוגמה, הצטרפות של משתמש נוסף כמעט לא עולה לחברה כסף. הם לא צריכים לקנות עבורו חומרה ייעודית, ועלויות המחשוב הנדרשות לכלל הפעולות של אותו משתמש זניחות.</p>
+<p>עבור רוב חברות התוכנה B2B של ימינו, מה שנכלל תחת COGS עשוי להיות חלק יחסי בתשתיות שמוקצות עבור לקוח מסוים, חלק יחסי מעלות אנשי התמיכה וה-customer success שהוא מקבל - וזה עדיין שומר על מבנה עלויות שמאפיין COGS נמוך ביחס ל-margins גבוהים במיוחד.</p>
+<p>כעת נשים לב לעוד נתח גדול שחברת סטרטאפ צריכה לתחזק כדי להתקיים: עובדים. נדבר על עובדי R&amp;D.<br>
+הסיבה שהמאמר מתרכז בעיקר במחלקת ה-R&amp;D היא שברוב הסטרטאפים עד סביבות גיוס B, הוצאות על R&amp;D מהוות את החלק הארי ב-OpEx.<sup><a href="#user-content-fn-7" id="user-content-fnref-7" data-footnote-ref aria-describedby="footnote-label">7</a></sup></p>
+<p>אחרי פריצת ה-cloud למיינסטרים, סטרטאפים היו מגייסים סיד כדי להגיע ל-MVP, ואחרי שיש וולידציה חזקה שם, ותחזית לצמיחה מסיבית בלקוחות, בדרך כלל מגיע גיוס A או B גדול יחסית, שנועד למשוך המון R&amp;D - מהטאלנטים והארכיטקטים החדים ביותר בשוק ועד מתכנתי mid, ג׳וניורים, ו-QA.</p>
+<p>בעצם, ככל שיש יותר לקוחות יש יותר דרישות: דרישות לפיצ׳רים מורכבים, כמו גם פשוטים, לסקייל, לשפות שונות, לתיקוני באגים, אולי אפילו למוצרים משלימים. וכדי לעמוד בדרישות האלה במהירות רבה ככל הניתן, צריך לגייס המון כוח אדם - ומהר.<br>
+יכולת הפיתוח חסומה לינארית בכוח האדם. עובדי R&amp;D לוקחים משימות פיתוח ומבצעים אותם.</p>
+<p>כוח אדם הוא לא עסק גמיש במיוחד:</p>
+<ul>
+<li>לוקח זמן וקשב לאייש משרה.<sup><a href="#user-content-fn-8" id="user-content-fnref-8" data-footnote-ref aria-describedby="footnote-label">8</a></sup></li>
+<li>לוקח זמן לעשות onboarding לעובד חדש. כלומר - עד שעובד נהיה אפקטיבי, הוא צריך תקופת אכשרה, ובד״כ הוא גם גוזל מהאפקטיביות של קולגות.</li>
+<li>לוקח זמן למלא שורות עבור אנשים שהחליטו לעזוב (בניגוד לשרתים, לבני אדם יש רצון חופשי).</li>
+<li>אם פרויקט מסוים נסגר - האנשים שעבדו עליו עשויים להיות מפוטרים או מועברים למחלקות ולמוצרים אחרים. במידה והם מועברים, זה לא תמיד הפיט הכי טוב. במידה ומפטרים - זו עלות לא זניחה עבור החברה: בכספים, במוניטין ובמורל כוח האדם.</li>
+</ul>
+<p>אגב, הרשימה הזאת היא לא תובנה חדשה. כלכלני עבודה מכירים אותה עוד מ-1962, כש-Walter Oi טבע את המושג “עבודה כגורם ייצור מעין-קבוע” (quasi-fixed): עובד הוא לא הוצאה שוטפת נטו, אלא השקעה עם עלות כניסה (גיוס, onboarding) ועלות יציאה (פיצויים, מורל, ידע שיוצא מהדלת). העלויות האלה הן בדיוק מה שהופך כוח אדם ללא-גמיש.<sup><a href="#user-content-fn-9" id="user-content-fnref-9" data-footnote-ref aria-describedby="footnote-label">9</a></sup></p>
+<p>כבר מהפסקה הקודמת קל לראות את הדמיון בחוסר הגמישות. גם אם בסוף הפונקציה שארכיטקט תוכנה צריך ליישם בתוך החברה מוגדרת היטב עבור המוצר שעליו הוא נדרש לעבוד - לאותו אדם יש את השאיפות המקצועיות שלו, את העניין האישי שלו בעבודה ואת הרצון לפתח את הקריירה שלו.</p>
+<p>למצוא עובד מתאים, במיוחד לתפקידים מורכבים, דורש המון זמן, מאמץ וכסף. בדרך כלל השכר שלו גבוה יותר (מה שלוקח חלק מה-runway), המאמץ להשיג אותו גבוה יותר, וזה עשוי לקחת שבועות וחודשים עד שהתפקיד מאויש.</p>
+<p>במידה וחלק מהפיצ׳רים שנדרשים בשלב מתקדם של החברה הם פיצ׳רים קלים ליישום, אותו ארכיטקט לא ירצה לעבוד עליהם, ועבור כך על החברה להעסיק מתכנתים ברמות mid ו-junior שיפתחו את אותם פיצ׳רים.</p>
+<p>אם יוזמה מסוימת נכשלת, החברה צריכה לפטר את העובד. עלויות הגיוס וה-onboarding של העובד הזה כבר שקועות ולא יחזרו (ובניגוד לשרת, שהוא נכס שאפשר למכור או להסב - עובד הוא לא). מה שמכריע את ההחלטה הוא העלויות קדימה: פיטורים עולים בפיצויים, במורל ובמוניטין, וגיוס מחליף עולה עוד יותר - לפי גאלופ, החלפת עובד עולה בין חצי שנה לשנתיים של שכר.<sup><a href="#user-content-fn-10" id="user-content-fnref-10" data-footnote-ref aria-describedby="footnote-label">10</a></sup> לכן חברות מעדיפות להזיז את אותו עובד לתפקיד אחר (שהוא לאו דווקא מתאים אליו יותר) ולקבל את העובדה שגם לתפקיד זה הוא יצטרך לעשות onboarding (כלומר, בטווח הקצר, התפוקה שלו נפגעת).</p>
+<p>גם כאן קל לראות שלחברות גדולות יש יתרון מסוים. incumbents יכולים לחלוש על מספר מוצרים, הם יכולים להציע אופק התפתחותי נרחב יותר, עם יותר דיסציפלינות, והמוביליות בתוך החברה עשויה להיות יעילה יותר מאשר בסטרטאפ קטן עם מוצר אחד שמנסה לפרוץ לשוק.</p>
+<p>הפונקציה ששרתים ממלאים היא קיבולת של יכולת עיבוד, והקלאוד מגמיש ככל הניתן את היכולת של חברות להשתמש בפונקציה הזו.<br>
+ה-R&amp;D היא פונקציה של יכולת פיתוח. הדרך של חברות להשיג את היכולת הזו, היא, כאמור, להעסיק עוד ועוד עובדים. עד היום.</p>
+<h2 id="פריצת-ה-agents-למיינסטרים">פריצת ה-agents למיינסטרים</h2>
+<p>בתהליך הדרגתי משנת 2023, שצבר תאוצה ממש בשלהי 2025, נוצרו אייג׳נטים מבוססי LLMs. כיום, אייג׳נטים יכולים לכתוב קוד, לאפיין, להריץ טסטים, לדאוג לתהליכי CI/CD ולעזור בקבלת החלטות בכמעט כל תחום.</p>
+<p>נראה, במידת מה, שגם ה-block הגדול השני (והאחרון) שנותר ל-startups קטנים נפרץ באמצעות אותם agents. אנחנו יכולים לראות קווי דמיון בין התהליך ש-agents עושים לגופי R&amp;D לבין התהליך ש-cloud עשה לשרתים.</p>
+<p>לדוגמה: agents, ממש כמו ה-cloud, לאו דווקא זולים יותר בטווח הארוך מעובדים. מודלי העבודה עוד לא חלוטים עד הסוף, עלויות tokens עשויות להגיע לאלפי דולרים בחודש לעובד, ובהינתן שמדובר בטכנולוגיה חדשה - העבודה לאו דווקא היעילה ביותר, כפי שהשוק יתרגם אותה בעוד כמה שנים, לאחר אימוץ מלא של התהליך.</p>
+<p>קווי הדמיון המהותיים יותר:</p>
+<p><strong>מהירות.</strong> agents לא צריכים מגייסים, לא צריכים שבועות של ראיונות, וכשאין בהם צורך - אין צורך לפטר אותם או להעביר אותם לתפקיד אחר. אפשר פשוט למחוק אותם. בדומה ליתרון המהירות של cloud על גבי שרתים.</p>
+<p><strong>תמחור.</strong> בעוד שעלות של עובד קבועה על פני החודשים שבהם הוא עובד בחברה, עלות של agent משתנה בהתאם לפעולות שהוא מריץ. agent יכול לעבוד 24/7, וכאשר אין בו צורך - גם אם זמנית - הוא לא עולה כסף בכלל. בדיוק כמו מודל ה-cloud. או בניסוח של הכלכלנים: אם עובד הוא גורם ייצור מעין-קבוע, agent הוא גורם הייצור הראשון של עבודת פיתוח עם עלות כניסה ויציאה כמעט אפסית. הראשון שמתנהג באמת כמו OpEx משתנה.</p>
+<p>היום, צוות מוקפד של מומחי מוצר ופיתוח, שעשוי להכיל מספר זעיר של אנשים - לדוגמה 5-15 (כמות שמאפיינת תקופות מאוד ראשוניות בחברה, בדרך כלל אחרי שלבי pre-seed או seed) - וצבא של agents, יכולים לקבל כוח אש ויכולות delivery שדומים לחברה גדולה פי כמה בכוח אדם (שמשקף בדרך כלל גיוס גדול יותר, A או B). בטח בהינתן ה-codebase הרזה, המומחיות של אנשי הצוות וההתאמה המדויקת לתפקיד שאותו הם מבצעים.<sup><a href="#user-content-fn-11" id="user-content-fnref-11" data-footnote-ref aria-describedby="footnote-label">11</a></sup></p>
+<p>בדומה ל-cloud: אפשר להרים רשת רזה של cloud במחיר זעום יחסית לקנייה מראש של השרתים, אחסונם ותחזוקתם.</p>
+<p>יהיה מעניין לראות בשנים הקרובות איך הדבר הזה ישפיע על סעיף ה-OpEx. האם הגרף של ייצור פיצ׳רים ותיקון באגים כתלות בכמות העובדים יישאר חסום לינארית, או שמא יפרוץ אותו?<br>
+כלומר, האם תמהיל של צוות נכון, עם מעט עובדים והרבה agents, יוכל לייצר תפוקה השווה לצוות פיתוח גדול ממנו בסדר גודל?<br>
+והאם יהיה אפשר לרתום את כוח העבודה הסקלבילי, שעולה לפי שימוש, בקצבים מהירים - בדומה לפער בין הרמה של שירות ב-cloud לעומת קנייה שלו כשרת?</p>
+<h2 id="גם-כאן-נסתכל-על-ה-incumbent">גם כאן נסתכל על ה-incumbent</h2>
+<p>ה-incumbents של ימינו נבנו לפני עידן ה-agents. בשנה האחרונה אנחנו עדים לגל פיטורים בהרבה מחברות הטכנולוגיה הגדולות. נראה ש-AI נרשם כאחת הסיבות העיקריות.<sup><a href="#user-content-fn-12" id="user-content-fnref-12" data-footnote-ref aria-describedby="footnote-label">12</a></sup></p>
+<p>גם אם על הנייר נראה שהקיצוצים נועדו לתמוך בשילוב טכנולוגיות agentic בתהליכי הפיתוח והבנייה, לאו דווקא שהיישום שלהם באמת משרת את המטרה הזאת. ככל הנראה, השכבות שמפוטרות שייכות לפרויקטים פחות כלכליים, והמשאבים מוסטים לפיצ׳רים שתואמים יותר את העידן הנוכחי. ייתכן שחלקם מבוססי ביצועים - אבל ביצועים שמשקפים את העבודה של טרום עידן ה-AI.</p>
+<p>ב-incumbents, לאחר הורדת המשקל העודף, לא מובטח שהצוות הנותר באמת יכול לשלב סביבה agentic באותה יעילות כמו startup קטן שצמח על ברכי ה-AI. כוח האדם הנותר לאו דווקא יודע להפעיל כלים אלה בצורה אידיאלית, ותשתיות ובסיס הקוד לאו דווקא יתמכו בצורה אידיאלית בשימוש בכלי AI.<sup><a href="#user-content-fn-13" id="user-content-fnref-13" data-footnote-ref aria-describedby="footnote-label">13</a></sup></p>
+<p>בעבר ראינו לא מעט incumbents שאיבדו את הגדוּלה ל-disruptors יעילים שצמחו מתחתית השוק (התופעה נסקרה רבות ב-Innovator’s Dilemma של קלייטון קריסטנסן). אחת הדרכים האפקטיביות של incumbents להתגבר על התופעה היא פשוט לקנות את אותן חברות - לפני שהן נהיות גדולות ומאיימות על מקומם - ולהכניס את הטכנולוגיה והמוצרים שלהן פנימה.</p>
+<p>דוגמה טובה לזה קורית בתחום ה-security - תחום שאני עובד בו בעשור האחרון. בשנים האחרונות אנחנו רואים קונסולידציה גדולה בתחום. יש מספר חברות פלטפורמה שמאגדות בתוכן פתרונות אבטחה עבור כמעט כל מוצר בשוק. כאשר קם צורך במוצר סקיוריטי חדש, אותם incumbents יכולים לפתח פתרון בעצמם, או לחכות שהשוק יעשה את שלו ויהיו מספר שחקנים מבוססים בתחום. הם אפילו יכולים לבחור להשקיע ב-startups בתחילת דרכם. אחרי שמספר startups נוחלים הצלחה (נמצא עבורם PMF יציב ולעיתים אף לקוחות משלמים) ונראה שהפתרון שלהם באמת יעיל - אותם incumbents קונים את המוצרים ומוסיפים אותם ל-suite שלהם. ככה הם משמרים את הדומיננטיות שלהם בשוק.<sup><a href="#user-content-fn-14" id="user-content-fnref-14" data-footnote-ref aria-describedby="footnote-label">14</a></sup></p>
+<p>ייתכן שדווקא דרך אפקטיבית של ה-incumbents לאמץ את הפרדיגמה היא שבהינתן איתות משמעותי של השוק לעבר טכנולוגיה מסוימת - הם יתחילו לפתח בעצמם את הפתרונות באינקובטורים פנימיים רזים ומהירים. זה עשוי משמעותית להגביר את הסיכוי שה-re-org שנעשה במסגרת קיצוצים של AI יהיה אפקטיבי ולא סתם קיצוץ של שורת ההוצאות.<br>
+זה לא שאינקובטורים מסוג זה לא היו קיימים בחברות גדולות לפני כן, אבל באמצעות ה-flywheel המתואר לעיל, זה נהיה יותר ויותר סקלבילי - וייתכן שישפיע על היכולת של סטרטאפים להיקנות ע״י אותן חברות.<br>
+שינוי פרדיגמה כזה עלול להשפיע על אסטרטגיות יציאה של סטרטאפים שקמים היום.</p>
+<p>לסיכום, נראה שישנם קווי דמיון חזקים בין מערכת היחסים שבין קלאוד לשרתים למערכת היחסים שבין אייג׳נטים מבוססי בינה מלאכותית ועובדים בארגונים:</p>
+<ul>
+<li>הפונקציה שאחד מחליף בשני</li>
+<li>מאפיינים: היכולת לעשות scale up &amp; down, המהירות, המחיר</li>
+<li>סעיפים חשבונאיים וההתייחסות אליהם</li>
+<li>היכולת להגמיש את צריכת היכולת (עיבוד/פיתוח) ע״י חברות</li>
+</ul>
+<p>כמובן שבסוף אנחנו מדברים על מהפכות שונות לגמרי, כמו העובדה ש-agents פיתוח זה utilization אחד של AI, ההחלפה של אייג׳נט באדם היא לא חח״ע (כמו שאפשר להחליף שרת ב-EC2) וכו׳.</p>
+<p>המאפיינים האלה בקלאוד עשו enablement למספר מהפכות, בראשן ה-SaaS. עוד מוקדם לקבוע מה (ואם) תהיה המקבילה/ות לכך עבור agentic AI. בדיעבד נוכל לדעת אילו ניצנים שקיימים היום תדלקו את המהפכות הללו, אם וכאשר הן יקרו.</p>
+<p>בפוסט הבא אצלול עמוק יותר לאיך agentic AI משפיע כבר היום על פיתוח מוצרים, על עוד עניינים חשבונאיים, והאם הוא חושף את הסדקים הראשונים שיכולים להפיל incumbents ע״י ה-disruptors.</p>
+<p>מוזמנים ליצור קשר ולדון איתי בכל פלטפורמה שנמצאת כאן. לחזות את העתיד זה קשה, אז אני אשמח לשמוע דעות נוספות, פידבקים והמלצות לאוכל טעים.</p>
+<hr>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>Joe McKendrick, <a href="https://www.forbes.com/sites/joemckendrick/2011/11/01/cloud-computing-is-fuel-for-the-next-entrepreneurial-boom/">“Cloud Computing Is Fuel For The Next Entrepreneurial Boom”</a>, Forbes, נובמבר 2011. <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>הטווח הטיפוסי לראונד סיד בעידן שלפני התנפחות הראונדים היה $500-900K (<a href="https://pitchbook.com/news/articles/fewer-fatter-seed-series-a-deal-sizes-skyrocket-in-2017">PitchBook</a>); בראונד A, הקרנות של אמצע שנות ה-2000 נהגו להשקיע $3-5M (<a href="https://news.crunchbase.com/venture/seed-funding-startups-top-vc-firms-a16z-nea-khosla/">Crunchbase News</a>), וחציון ה-A עמד על $2.8M עוד ב-2012 (PitchBook). <a href="#user-content-fnref-2" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-3">
+<p>למרות ש-AWS השיקה את EC2 עוד ב-2006, האימוץ היה הדרגתי: <a href="https://www.forrester.com/press-newsroom/forrester-security-concerns-hinder-cloud-computing-adoption">בסקר של Forrester מ-2009</a>, רק 3% מהארגונים השתמשו באירוח שרתים וירטואליים לפי שימוש, וכמחצית ציינו חששות אבטחה ופרטיות כסיבה המרכזית להימנע מהענן. רק לקראת אמצע העשור הבא הענן הפך לברירת המחדל. <a href="#user-content-fnref-3" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-4">
+<p><a href="https://www.forbes.com/sites/joemckendrick/2011/11/01/cloud-computing-is-fuel-for-the-next-entrepreneurial-boom/">Forbes ציין כבר ב-2011</a> שהיתרון הכלכלי מתכנס אחרי שנתיים-שלוש; <a href="https://a16z.com/the-cost-of-cloud-a-trillion-dollar-paradox/">a16z הראו</a> שבסקייל הוא אף יקר יותר. <a href="#user-content-fnref-4" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-5">
+<p><a href="https://www.cloudwards.net/saas-statistics/">Cloudwards, SaaS Statistics</a>. <a href="#user-content-fnref-5" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-6">
+<p>Gartner, נובמבר 2021: עד 2025, כ-95% מה-workloads הדיגיטליים החדשים ייפרסו על פלטפורמות cloud-native (לעומת 30% ב-2021), ו-85% מהארגונים יאמצו עקרון cloud-first. <a href="https://www.techrepublic.com/article/85-of-organizations-will-be-cloud-first-by-2025-says-gartner/">סקירה ב-TechRepublic</a>. <a href="#user-content-fnref-6" data-footnote-backref="" aria-label="Back to reference 6" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-7">
+<p>לפי <a href="https://www.scalevp.com/blog/splitting-spend-how-to-allocate-your-2025-budget-across-opex-categories">Scale Venture Partners</a> (Scale Studio, 1,000+ חברות פרטיות), בטווח $0-1M ARR סעיף ה-S&amp;M מהווה כ-25% בלבד מה-OpEx - כלומר R&amp;D הוא הרוב - ורק מעל $25M ARR הוא הופך לסעיף הגדול ביותר. לפי <a href="https://www.saas-capital.com/blog-posts/spending-benchmarks-for-private-b2b-saas-companies/">סקר SaaS Capital 2026</a> (1,000+ חברות B2B SaaS), החציונים בחברות בשלות: R&amp;D 22% מה-ARR, Sales+Marketing 23%, G&amp;A 15%. <a href="#user-content-fnref-7" data-footnote-backref="" aria-label="Back to reference 7" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-8">
+<p>הזמן הממוצע לגיוס מהנדס תוכנה עומד על <a href="https://www.paraform.com/blog/average-time-to-hire-software-engineer">כ-35 יום</a>, החציון בהנדסה הוא 41 יום, ולפי <a href="https://rockstardeveloperuniversity.com/software-developer-hiring-statistics/">Workable הממוצע הגלובלי למשרות הנדסה מגיע ל-62 יום</a>. בתפקידים בכירים, <a href="https://www.bridgeviewit.com/blog/how-long-to-fill-a-technical-role/">כ-40% מהמשרות לוקחות 90 יום ומעלה לאיוש</a> (SHRM 2025). <a href="#user-content-fnref-8" data-footnote-backref="" aria-label="Back to reference 8" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-9">
+<p>Walter Y. Oi, “Labor as a Quasi-Fixed Factor”, The Journal of Political Economy, Vol. 70, No. 6 (1962). <a href="#user-content-fnref-9" data-footnote-backref="" aria-label="Back to reference 9" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-10">
+<p>Shane McFeely &amp; Ben Wigert, <a href="https://www.gallup.com/workplace/247391/fixable-problem-costs-businesses-trillion.aspx">“This Fixable Problem Costs U.S. Businesses $1 Trillion”</a>, Gallup, 2019 - עלות החלפת עובד נעה בין מחצית לפעמיים השכר השנתי. <a href="#user-content-fnref-10" data-footnote-backref="" aria-label="Back to reference 10" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-11">
+<p>לפי <a href="https://www.bvp.com/atlas/the-state-of-ai-2025">Bessemer</a>, חברות AI מהצומחות ביותר מייצרות כ-$1.13M ARR לעובד - פי 4-5 מחברת SaaS טיפוסית - ו-Lovable הגיעה ל-$200M ARR עם כ-45 עובדים בלבד. <a href="#user-content-fnref-11" data-footnote-backref="" aria-label="Back to reference 11" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-12">
+<p>לפי <a href="https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html">Challenger, Gray &amp; Christmas</a>, כמעט 55,000 פיטורים בארה“ב ב-2025 יוחסו במפורש ל-AI, ולפי <a href="https://skillsyncer.com/layoffs-tracker">מעקב 2026</a>, כ-54% מאירועי הפיטורים בטק מציינים במפורש AI או אוטומציה כגורם. דוגמאות בולטות: <a href="https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/">אמזון קיצצה כ-30,000 משרות קורפורייט בתוך שלושה חודשים (כ-9%)</a>, מטא 10%, אטלסיאן 10%, Snap 16%, אורקל כ-13%, ו-Salesforce קיצצה כ-4,000 אנשי תמיכה עם האמירה המפורסמת של בניוף: “I need less heads”. <a href="#user-content-fnref-12" data-footnote-backref="" aria-label="Back to reference 12" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-13">
+<p><a href="https://www.classcentral.com/course/youtube-does-ai-actually-boost-developer-productivity-100k-devs-study-yegor-denisov-blanch-stanford-469765">מחקר סטנפורד על 100,000+ מפתחים</a> מצא ש-AI נותן שיפור של 30-40% במשימות greenfield פשוטות, אבל רק 5-10% (ולעיתים אף שלילי) בקוד legacy מורכב. startup AI-native חי בקצה הגבוה; incumbent עם codebase בן עשרים שנה - בנמוך. <a href="#user-content-fnref-13" data-footnote-backref="" aria-label="Back to reference 13" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-14">
+<p>Palo Alto Networks בנתה כך את הפלטפורמה שלה לאורך עשור - רכישות כמו Demisto (SOAR), Twistlock (אבטחת containers), Expanse (ASM), Cider (AppSec), Dig ו-Talon - ובשיא, רכישת CyberArk בכ-$25 מיליארד, הגדולה בתולדותיה, שהוסיפה לה עמוד שלם של Identity Security. מתחרה בולטת - CrowdStrike פעלה דומה (Humio ללוגים, Preempt ל-Identity, Bionic ל-ASPM, Flow Security ו-Adaptive Shield). <a href="#user-content-fnref-14" data-footnote-backref="" aria-label="Back to reference 14" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap">
+          <div class="footer-inner" dir="ltr">
+            <span>&copy; 2026 Yahel Hai.</span>
+            <span class="social">
+              <a href="https://github.com/yahelhai" aria-label="GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/yahel-hai/" aria-label="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z" />
+                </svg>
+              </a>
+              <a href="mailto:me@yahelh.ai" aria-label="שליחת דוא״ל">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 5L2 7" />
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
